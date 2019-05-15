@@ -1,4 +1,4 @@
-# Python_Flask_App
+# Flask App
 
 ### Pre request:-
     installed python and pip3
