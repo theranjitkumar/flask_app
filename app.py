@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from gevent.pywsgi import WSGIServer
 import mysql.connector
 
 con = mysql.connector.connect(
@@ -15,7 +16,7 @@ app = Flask(__name__)
 def index():
     conCursor = con.cursor()
 
-    conCursor.execute("SELECT * FROM student")
+    conCursor.execute("SELECT * FROM user")
 
     result = conCursor.fetchall()
 
@@ -23,14 +24,15 @@ def index():
         print(x)
 
     # return "<h3> Hello Python... </h3>" 
-    return render_template('index.html', students = result)
+    return render_template('index.html', users = result)
 
 @app.route('/about')
 def about():
     return '<h3> About page </h3>'
 
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+    http_server = WSGIServer(('', 5000), app)
+    http_server.serve_forever()
 
 
 """ ========run:- "flask run" to run this flas app========= """
