@@ -2,12 +2,12 @@
 
 ### Pre request:-
     installed python and pip3
-    installed pip3 OR  run on terminal to install pip3            : sudo apt-get install python3-pip
-    installed virtulaenv OR run on terminal to install virtualenv : sudo pip3 install virtualenv
+    installed pip3 OR  run to install pip3            : sudo apt-get install python3-pip
+    installed virtulaenv OR run to install virtualenv : sudo pip3 install virtualenv
 ### NEXT:
-	run on terminal into ur project root directory to create virtual environment: virtualenv pyenv
-	run on terminal to virtual environment: activate source pyenv/bin/activate
+	run into ur project root directory to create virtual environment: virtualenv pyenv
+	run to install virtual environment: activate source pyenv/bin/activate
 ### NEXT:
-	run: pip install -r requirements.txt - to install package dependency
+	run to install package dependency: pip install -r requirements.txt
 ### NEXT:-
     flask run
