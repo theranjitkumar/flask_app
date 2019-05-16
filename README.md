@@ -6,8 +6,8 @@
     installed virtulaenv OR run to install virtualenv : sudo pip3 install virtualenv
 ### NEXT:
 	download this repo and go to root directory
-	run into ur project root directory to create virtual environment: virtualenv pyenv
-	run to install virtual environment: activate source pyenv/bin/activate
+	run into ur project root directory to create virtual environment: virtualenv venv
+	run to install virtual environment: activate source venv/bin/activate
 ### NEXT:
 	run to install package dependency: pip install -r requirements.txt
 ### NEXT:-
