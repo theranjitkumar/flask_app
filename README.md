@@ -9,6 +9,6 @@
 	run into ur project root directory to create virtual environment: virtualenv venv
 	run to install virtual environment: activate source venv/bin/activate
 ### NEXT:
-	run to install package dependency: pip install -r requirements.txt
+	run to install package dependency: pip3 install -r requirements.txt
 ### NEXT:-
     flask run
