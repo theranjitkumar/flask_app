@@ -1,6 +1,9 @@
 from flask import Flask, render_template
 from gevent.pywsgi import WSGIServer
 import mysql.connector
+import pymongo
+client = pymongo.MongoClient("localhost", 27017)
+db = client.test
 
 con = mysql.connector.connect(
     host="localhost",
@@ -28,6 +31,9 @@ def index():
 
 @app.route('/about')
 def about():
+    print(db.name)
+    for item in db.user.find():
+        print(item)
     return '<h3> About page </h3>'
 
 if __name__ == '__main__':

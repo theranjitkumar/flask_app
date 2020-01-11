@@ -13,3 +13,6 @@
 	run to install package dependency: pip3 install -r requirements.txt
 ### NEXT:-
     flask run
+
+### Note:
+    home page data comming form mysql and about page console data comming form mongodb
